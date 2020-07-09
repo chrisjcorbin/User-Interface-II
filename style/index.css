@@ -1,1 +1,109 @@
 /* Add CSS styling here */
+
+/*Reset Area Start
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+/*Reset Area End*/
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    border:1px solid grey;
+}
+
+.navtop, .navbottom{
+    display:flex;
+    background: grey;
+}
+
+.navtop, .navbottom, a{
+    text-decoration:none;
+    color:black;
+}
+
+.navbottom{
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+}
+
+h1, h3{
+    background:grey;
+}
+
+.home, .about, .contact, .projects, .contactme{
+    display:flex;
+    background:white;
+    border:2px solid black;
+    padding:10px 30px;
+    justify-content:center;
+}
+
+.home{
+    background:black;
+}
+
+.home a{
+    color:white;
+}
+
+img { 
+    width:auto; 
+    height:200px;
+}
+
+#maintop{
+    display:flex;
+    position:relative; 
+    justify-content:flex-start;
+    align-items:flex-end;
+}
+
+#mainimg{
+    display:flex;
+    padding:10px;
+}
+
+#maintxt{
+    width:50%;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    padding:10px;
+}
+
+.myprojects{
+    width:20%;
+    display:flex;
+    background:white;
+    border:2px solid black;
+    padding:10px 30px;
+}
+
+#mainbottom{
+    display:flex;
+    flex-wrap:wrap;
+    order:4;
+    justify-content:space-between;
+    padding:10px;
+}
