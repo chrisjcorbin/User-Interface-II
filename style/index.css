@@ -130,3 +130,12 @@ img {
     text-align:center;
     align-items:top;
 }
+
+.social{
+    display:flex;
+    padding:20px;
+}
+
+i{
+    padding:0 20px;
+}
