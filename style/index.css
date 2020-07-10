@@ -29,6 +29,8 @@ vertical-align: baseline;
     margin:0;
     max-width:100%;
     /*border:1px solid grey;*/
+    font-family: 'Gaegu', cursive;
+    font-size:17px;
 }
 
 .navtop, .navbottom{
@@ -51,6 +53,18 @@ vertical-align: baseline;
 h1, h3{
     background:grey;
     padding:10px;
+}
+
+h1{
+    font-size:50px;
+}
+
+h2{
+    font-size:40px;
+}
+
+h3{
+    font-size:30px;
 }
 
 .home, .about, .contact, .projects, .contactme{
