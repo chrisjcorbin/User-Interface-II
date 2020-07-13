@@ -197,7 +197,7 @@ i{
         padding:0 10px 10px;
     }
     .home, .about, .contact, .projects, .contactme{
-        min-width:23%;
+        min-width:15%;
     }
     .myprojects{
         min-width:20%;
@@ -210,10 +210,10 @@ i{
         height:125px;
     }
     .home, .about, .contact, .projects, .contactme{
-        min-width:26.5%;
+        min-width:24%;
     }
     .myprojects{
-        min-width:34%;
+        min-width:32%;
         margin:3% 33%;
     }
 }
