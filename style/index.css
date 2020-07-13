@@ -1,1 +1,175 @@
 /* Add CSS styling here */
+
+/*Reset Area Start
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+/*Reset Area End*/
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /*border:1px solid grey;*/
+    font-family: 'Gaegu', cursive;
+    font-size:17px;
+    width: auto;
+    height: auto;
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -ms-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    animation: fadein 3s;
+}
+
+/* Fun with Animation Fade-In and Fade-Out */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* END OF Fun with Animation Fade-In and Fade-Out */
+
+.navtop, .navbottom{
+    display:flex;
+    background: grey;
+    padding:0 0 30px 30px;
+}
+
+.navtop, .navbottom, a{
+    text-decoration:none;
+    color:black;
+}
+
+.navbottom{
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+}
+
+h1, h3{
+    background:grey;
+    padding:10px;
+}
+
+h1{
+    font-size:50px;
+}
+
+h2{
+    font-size:40px;
+}
+
+h3{
+    font-size:30px;
+}
+
+.home, .about, .contact, .projects, .contactme{
+    display:flex;
+    background:white;
+    border:2px solid black;
+    padding:5px 30px;
+    justify-content:center;
+}
+
+.home{
+    background:black;
+}
+
+.home a{
+    color:white;
+}
+
+img { 
+    width:auto; 
+    border:2px solid black;
+    height:200px;
+    margin:30px 0 0 0;
+}
+
+#maintop{
+    display:flex;
+    position:relative; 
+    justify-content:flex-start;
+    align-items:flex-end;
+}
+
+#mainimg{
+    display:flex;
+    padding:10px;
+}
+
+#maintxt{
+    width:50%;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    padding:10px;
+}
+
+.myprojects{
+    width:20%;
+    display:flex;
+    background:white;
+    border:2px solid black;
+    padding:5px 30px;
+    margin:20px 0;
+}
+
+#mainbottom{
+    display:flex;
+    flex-wrap:wrap;
+    order:4;
+    justify-content:space-between;
+    padding:20px 10px;
+    text-align:center;
+    align-items:top;
+}
+
+.social{
+    display:flex;
+    padding:20px;
+}
+
+i{
+    padding:0 20px;
+}
