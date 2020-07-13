@@ -128,27 +128,18 @@ img {
 
 #maintop{
     display:flex;
-    position:relative; 
-    justify-content:flex-start;
-    align-items:flex-end;
 }
 
 #mainimg{
-    display:flex;
-    padding:10px;
+    padding:0 10px;
 }
 
 #maintxt{
-    width:50%;
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    padding:10px;
+    padding:0 20px;
 }
 
 .myprojects{
-    width:20%;
-    display:flex;
+    max-width: 15%;
     background:white;
     border:2px solid black;
     padding:5px 30px;
@@ -172,4 +163,57 @@ img {
 
 i{
     padding:0 20px;
+}
+
+/* Responsive Design */
+
+@media(max-width:800px){
+    html{
+        font-size:62.5%;
+    }
+    h1, h2, p{
+        text-align:center;
+    }
+    .navtop{
+        padding:0 0 5% 0;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    img{
+        height:210px;
+    }
+
+    .navbottom{
+        padding:2%;
+    }
+
+    #maintop{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    #mainbottom{
+        padding:0 10px 10px;
+    }
+    .home, .about, .contact, .projects, .contactme{
+        min-width:15%;
+    }
+    .myprojects{
+        min-width:20%;
+        margin:2% 40%;
+    }
+}
+
+@media(max-width:500px){
+    img{
+        height:125px;
+    }
+    .home, .about, .contact, .projects, .contactme{
+        min-width:24%;
+    }
+    .myprojects{
+        min-width:32%;
+        margin:3% 33%;
+    }
 }
