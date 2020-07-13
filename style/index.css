@@ -128,27 +128,18 @@ img {
 
 #maintop{
     display:flex;
-    position:relative; 
-    justify-content:flex-start;
-    align-items:flex-end;
 }
 
 #mainimg{
-    display:flex;
-    padding:10px;
+    padding:0 10px;
 }
 
 #maintxt{
-    width:50%;
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    padding:10px;
+    padding:0 20px;
 }
 
 .myprojects{
-    width:20%;
-    display:flex;
+    max-width: 15%;
     background:white;
     border:2px solid black;
     padding:5px 30px;
@@ -177,18 +168,31 @@ i{
 /* Responsive Design */
 
 @media(max-width:800px){
-    nav h1{
+    html{
+        font-size:62.5%;
+    }
+    h1, h2, p{
         text-align:center;
     }
     .navtop{
+        padding:20px 0;
         background-color:red;
         flex-direction:column;
         align-items:center;
     }
-    .home, .about, .contact, .projects, .contactme, .myprojects{
-        max-width:20%;
+
+    .navbottom{
+        padding:20px;
     }
-    #mainbottom{
-        order:2;
+
+    #maintop{
+        flex-direction:column;
+        align-items:center;
+    }
+    .home, .about, .contact, .projects, .contactme{
+        min-width:20%;
+    }
+    .myprojects{
+        min-width:20%;
     }
 }
