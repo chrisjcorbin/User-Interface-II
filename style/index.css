@@ -181,7 +181,7 @@ i{
     }
 
     img{
-        height:150px;
+        height:210px;
     }
 
     .navbottom{
@@ -200,8 +200,8 @@ i{
         min-width:23%;
     }
     .myprojects{
-        min-width:28%;
-        margin:2% 36%;
+        min-width:20%;
+        margin:2% 40%;
     }
 }
 
