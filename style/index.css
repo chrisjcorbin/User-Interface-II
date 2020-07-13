@@ -175,24 +175,45 @@ i{
         text-align:center;
     }
     .navtop{
-        padding:20px 0;
-        background-color:red;
+        padding:0 0 5% 0;
         flex-direction:column;
         align-items:center;
     }
 
+    img{
+        height:150px;
+    }
+
     .navbottom{
-        padding:20px;
+        padding:2%;
     }
 
     #maintop{
         flex-direction:column;
         align-items:center;
     }
+
+    #mainbottom{
+        padding:0 10px 10px;
+    }
     .home, .about, .contact, .projects, .contactme{
-        min-width:20%;
+        min-width:23%;
     }
     .myprojects{
-        min-width:20%;
+        min-width:28%;
+        margin:2% 36%;
+    }
+}
+
+@media(max-width:500px){
+    img{
+        height:125px;
+    }
+    .home, .about, .contact, .projects, .contactme{
+        min-width:26.5%;
+    }
+    .myprojects{
+        min-width:34%;
+        margin:3% 33%;
     }
 }
